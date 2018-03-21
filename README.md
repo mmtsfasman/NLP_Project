@@ -37,3 +37,16 @@
 
 
 
+<span style="color:green">**Что сделано:**</span>
+* <span style="color:green"> п. 1 - Соня Стырина </span>
+* <span style="color:green"> п. 2 - Саша Пивоваров </span>
+* <span style="color:green"> п. 3 - Маша Цфасман </span>
+* <span style="color:green"> п. 4 - Света Клименко </span>
+* <span style="color:green"> п. 5 - Маша Цфасман </span>
+
+<span style="color:purple">**В планах:**</span>
+* <span style="color:purple">п. 6 </span>
+* <span style="color:purple">придумать, что сделать с коллокациями - они пока что не находятся по нашей модели</span>
+
+
+
