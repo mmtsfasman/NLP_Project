@@ -11,7 +11,7 @@
 | --- |:---:| ---:|-----:|
 | ...|...| ...|...|
 <br />
-3) Обучаем word2vec на корпусе из п. 1 (corpus.txt)
+3) Обучаем word2vec на корпусе из п. 1 ([corpus.txt](https://drive.google.com/file/d/1M0gFiuZGunLa1v96ZawhI6S9f9Kv604a/view?usp=sharing))
 <br />
 <br />
 4) Составляем список слов, близких к словам из seed (исключая коллокации), через функцию most_similar
