@@ -1,6 +1,6 @@
 import json
 
-with open("cat_polarized.json", "r") as io:
+with open("rated_words/cat_polarized.json", "r") as io:
     words = json.load(io)
 
 

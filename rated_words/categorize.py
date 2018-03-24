@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import json
-from indexer import ReverseIndex
+from rated_words.indexer import ReverseIndex
 
 
 corpus = pd.read_csv("corpus.csv")
