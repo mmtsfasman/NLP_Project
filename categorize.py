@@ -18,7 +18,8 @@ for category, wordlist in words.items():
     for word, rlist in ratings[category].items():
         mean = np.mean(rlist)
         sd = np.std(rlist)
-        ratings[category][word] = (mean, sd)
+        support = len(rlist)
+        ratings[category][word] = (mean, sd, support)
 
 with open("cat_polarized.json", "w") as io:
     json.dump(ratings, io)
