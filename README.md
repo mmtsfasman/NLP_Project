@@ -4,15 +4,13 @@
   * лемматизируем
   * делаем по предложению на строчке
 
-
 ☀  код - 
 [corpus_cleaning+collocations.ipynb](https://github.com/mmtsfasman/NLP_Project/corpus%20cleaning%20%2B%20collocations.ipynb)
 
 ☀  результат - 
 [corpus.txt](https://drive.google.com/file/d/1M0gFiuZGunLa1v96ZawhI6S9f9Kv604a/view?usp=sharing)
 
-<br />
-<br />2) Преобразуем изначальный корпус в табличку, чтобы потом искать позитивные и негативные оценки в нем. Gервая колонка - текст, остальные 3 колонки - оценки (food/service/interior). 
+<br /> 2) Преобразуем изначальный корпус в табличку, чтобы потом искать позитивные и негативные оценки в нем. Gервая колонка - текст, остальные 3 колонки - оценки (food/service/interior). 
 
 | Text | Food | Service | Interior |
 | --- |:---:| ---:|-----:|
@@ -28,7 +26,7 @@
 <br /> ☀ код - 
 [word2vec&most_similar.ipynb](https://github.com/mmtsfasman/NLP_Project/word2vec%20%26%20most_similar%20lists.ipynb)
 
-<br /> ☀ результат - 
+☀ результат - 
 [my.model](https://github.com/mmtsfasman/NLP_Project/my.model)
 <br />
 <br />
@@ -37,7 +35,7 @@
 <br />  ☀ код - 
 [word2vec&most_similar.ipynb](https://github.com/mmtsfasman/NLP_Project/word2vec%20%26%20most_similar%20lists.ipynb)
 
-  ☀ результат - там же
+ ☀ результат - там же
 <br />
 <br />
 5) Используем ту же функцию и ту же модель, чтобы составить список слов близких к еде, сервису, интерьеру
@@ -57,13 +55,10 @@
 [param.json](param.json)
 
 <br />
-<br />
 (6.2) Расширенный список seed ☀ результат - 
 [seed_extended.txt](seed_extended.txt)  
 
-
-<br />
-7) Составляем список самых частотных и специфичных триграмм - как оказалось, этого достаточно, чтоб получить список оценочных коллокаций
+<br />7) Составляем список самых частотных и специфичных триграмм - как оказалось, этого достаточно, чтоб получить список оценочных коллокаций
 <br />
 <br />
 8) Берем список слов близких к еде, сервису, интерьеру из п.5, проходим по нему, выбираем предложения, содержащие эти слова, смотрим на их оценку по соответствующему параметру (food/service/interior). Смотрим, какие из оценочных слов из п. 4 в них используются, по оценке определяем их тональнальность pos/neg/ambi.
