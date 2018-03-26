@@ -5,7 +5,7 @@
   * делаем по предложению на строчке
 <br />  
 ☀  код - [corpus_cleaning+collocations.ipynb](https://github.com/mmtsfasman/NLP_Project/corpus%20cleaning%20%2B%20collocations.ipynb)
-☀  результат - [corpus.txt](https://drive.google.com/file/d/1M0gFiuZGunLa1v96ZawhI6S9f9Kv604a/view?usp=sharing)
+☀  результат - <a href="https://drive.google.com/file/d/1M0gFiuZGunLa1v96ZawhI6S9f9Kv604a/view?usp=sharing">corpus.txt</a>
 <br />
 <br />2) Преобразуем изначальный корпус в табличку, чтобы потом искать позитивные и негативные оценки в нем. Gервая колонка - текст, остальные 3 колонки - оценки (food/service/interior). 
 
