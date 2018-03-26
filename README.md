@@ -32,8 +32,8 @@
 <br />
 4) Составляем список слов, близких к словам из seed (исключая коллокации), через функцию most_similar
 > Исходим из того, что таким образом можно расширить список оценочных слов.
-<br />  ☀ код - 
-[word2vec&most_similar.ipynb](https://github.com/mmtsfasman/NLP_Project/word2vec%20%26%20most_similar%20lists.ipynb)
+
+ ☀ код - [word2vec&most_similar.ipynb](https://github.com/mmtsfasman/NLP_Project/word2vec%20%26%20most_similar%20lists.ipynb)
 
  ☀ результат - там же
 <br />
@@ -48,9 +48,7 @@
 <br />
 6) Чистим руками списки из п. 4 и п. 5
 <br />
-(6.1) Список слов по категориям  -  ☀ 
-[здесь](https://github.com/mmtsfasman/NLP_Project/word2vec%20%26%20most_similar%20lists.ipynb)
-
+(6.1) Список слов по категориям  -  ☀ [здесь](https://github.com/mmtsfasman/NLP_Project/word2vec%20%26%20most_similar%20lists.ipynb)
 лежит код, который выдавал мне каждое слово, а я писала 1 если оно подходит, ничего - если его не надо исключить из списка.  ☀ Конечный вид - json со словарем вида {'food':[word1, ...,wordn], 'service':[word1, ...,wordn], 'interior':[word1, ...,wordn]} ☀ Результат -
 [param.json](param.json)
 
