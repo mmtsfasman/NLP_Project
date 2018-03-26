@@ -3,33 +3,48 @@
   * удаляем теги, оставляем только текст
   * лемматизируем
   * делаем по предложению на строчке
-<br />  
-☀  код - [corpus_cleaning+collocations.ipynb](https://github.com/mmtsfasman/NLP_Project/corpus%20cleaning%20%2B%20collocations.ipynb)
-☀  результат - <a href="https://drive.google.com/file/d/1M0gFiuZGunLa1v96ZawhI6S9f9Kv604a/view?usp=sharing">corpus.txt</a>
+
+
+☀  код - 
+[corpus_cleaning+collocations.ipynb](https://github.com/mmtsfasman/NLP_Project/corpus%20cleaning%20%2B%20collocations.ipynb)
+
+☀  результат - 
+[corpus.txt](https://drive.google.com/file/d/1M0gFiuZGunLa1v96ZawhI6S9f9Kv604a/view?usp=sharing)
+
 <br />
 <br />2) Преобразуем изначальный корпус в табличку, чтобы потом искать позитивные и негативные оценки в нем. Gервая колонка - текст, остальные 3 колонки - оценки (food/service/interior). 
 
 | Text | Food | Service | Interior |
 | --- |:---:| ---:|-----:|
 | ...|...| ...|...|
-☀ код - [to_csv.py](https://github.com/mmtsfasman/NLP_Project/to_csv.py)
-☀ конечный файл - [corpus.csv](https://github.com/mmtsfasman/NLP_Projectr/corpus.csv)
+
+☀ код - 
+[to_csv.py](https://github.com/mmtsfasman/NLP_Project/to_csv.py)
+☀ конечный файл - 
+[corpus.csv](https://github.com/mmtsfasman/NLP_Projectr/corpus.csv)
 <br />
 <br />
 3) Обучаем word2vec на корпусе из п. 1 (corpus.txt)
-<br /> ☀ код - [word2vec&most_similar.ipynb](https://github.com/mmtsfasman/NLP_Project/word2vec%20%26%20most_similar%20lists.ipynb)
-<br /> ☀ результат - [my.model](https://github.com/mmtsfasman/NLP_Project/my.model)
+<br /> ☀ код - 
+[word2vec&most_similar.ipynb](https://github.com/mmtsfasman/NLP_Project/word2vec%20%26%20most_similar%20lists.ipynb)
+
+<br /> ☀ результат - 
+[my.model](https://github.com/mmtsfasman/NLP_Project/my.model)
 <br />
 <br />
 4) Составляем список слов, близких к словам из seed (исключая коллокации), через функцию most_similar
 > Исходим из того, что таким образом можно расширить список оценочных слов.
-<br />  ☀ код - [word2vec&most_similar.ipynb](https://github.com/mmtsfasman/NLP_Project/word2vec%20%26%20most_similar%20lists.ipynb)
+<br />  ☀ код - 
+[word2vec&most_similar.ipynb](https://github.com/mmtsfasman/NLP_Project/word2vec%20%26%20most_similar%20lists.ipynb)
+
   ☀ результат - там же
 <br />
 <br />
 5) Используем ту же функцию и ту же модель, чтобы составить список слов близких к еде, сервису, интерьеру
 Формат
-<br /> ☀ Код - [word2vec&most_similar.ipynb](https://github.com/mmtsfasman/NLP_Project/word2vec%20%26%20most_similar%20lists.ipynb)
+<br /> ☀ Код - 
+[word2vec&most_similar.ipynb](https://github.com/mmtsfasman/NLP_Project/word2vec%20%26%20most_similar%20lists.ipynb)
+
  ☀ Результат - там же
 <br />
 <br />
@@ -37,11 +52,16 @@
 <br />
 (6.1) Список слов по категориям  -  ☀ 
 [здесь](https://github.com/mmtsfasman/NLP_Project/word2vec%20%26%20most_similar%20lists.ipynb)
-лежит код, который выдавал мне каждое слово, а я писала 1 если оно подходит, ничего - если его не надо исключить из списка.  ☀ Конечный вид - json со словарем вида {'food':[word1, ...,wordn], 'service':[word1, ...,wordn], 'interior':[word1, ...,wordn]} ☀ Результат - [param.json](param.json)
+
+лежит код, который выдавал мне каждое слово, а я писала 1 если оно подходит, ничего - если его не надо исключить из списка.  ☀ Конечный вид - json со словарем вида {'food':[word1, ...,wordn], 'service':[word1, ...,wordn], 'interior':[word1, ...,wordn]} ☀ Результат -
+[param.json](param.json)
+
 <br />
 <br />
-(6.2) Расширенный список seed ☀ результат - [seed_extended.txt](seed_extended.txt)    
-<br />
+(6.2) Расширенный список seed ☀ результат - 
+[seed_extended.txt](seed_extended.txt)  
+
+
 <br />
 7) Составляем список самых частотных и специфичных триграмм - как оказалось, этого достаточно, чтоб получить список оценочных коллокаций
 <br />
