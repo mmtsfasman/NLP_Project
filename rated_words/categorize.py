@@ -4,18 +4,18 @@ import json
 from rated_words.indexer import ReverseIndex
 
 
-corpus = pd.read_csv("corpus.csv")
+corpus = pd.read_csv("../corpus.csv")
 corpus["Stemmed"] = corpus["Stemmed"].apply(lambda x: set(x.split()))
-with open("seed_extended.json") as io:
-    words = json.load(io)
+with open("../seed_extended.txt") as io:
+    words = [x.strip() for x in io.readlines()]
 
 index = ReverseIndex()
-index.load("reverse_index.pkl")
+index.load("../reverse_index.pkl")
 
 ratings = {"Interior": {}, "Service": {}, "Food": {}}
 
 for category in ratings.keys():
-    for word, count in words.items():
+    for word in words:
         lword = word.lower()
         ratings[category][lword] = []
         try:
@@ -40,4 +40,4 @@ for category, values in ratings.items():
         val_list = values.items()
         val_list = sorted(val_list, key=lambda x: x[1][1])
         for val in val_list:
-            io.write(f"{val[0]};{val[1][0]};{val[1][1]};{val[1][2]}\n")
+            io.write(f"{val[0]},{val[1][0]},{val[1][1]},{val[1][2]}\n")
