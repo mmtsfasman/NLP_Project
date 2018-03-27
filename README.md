@@ -5,7 +5,7 @@
   * делаем по предложению на строчке
 
 ☀  код - 
-[corpus_cleaning+collocations.ipynb](corpus%20cleaning%20+%20collocations.ipynb)
+[corpus_cleaning+collocations.ipynb](corpus%20cleaning%20+%20collocations.ipynb)<br />
 ☀  результат - 
 [corpus.txt](https://drive.google.com/file/d/1M0gFiuZGunLa1v96ZawhI6S9f9Kv604a/view?usp=sharing)
 <br /><br /> **2)** Преобразуем изначальный корпус в табличку, чтобы потом искать позитивные и негативные оценки в нем. Gервая колонка - текст, остальные 3 колонки - оценки (food/service/interior). 
@@ -15,14 +15,14 @@
 | ...|...| ...|...|
 
 ☀ код - 
-[to_csv.py](to_csv.py)
+[to_csv.py](to_csv.py)<br />
 ☀ конечный файл - 
 [corpus.csv](corpus.csv)
 <br />
 <br />
 **3)** Обучаем word2vec на корпусе из п. 1 (corpus.txt)
 <br /> ☀ код - 
-[word2vec&most_similar.ipynb](word2vec%20&%20most_similar%20lists.ipynb)
+[word2vec&most_similar.ipynb](word2vec%20&%20most_similar%20lists.ipynb)<br />
 ☀ результат - 
 [my.model](my.model)
 <br />
@@ -30,26 +30,30 @@
 **4)** Составляем список слов, близких к словам из seed (исключая коллокации), через функцию most_similar
 > Исходим из того, что таким образом можно расширить список оценочных слов.
 
- ☀ код - [word2vec&most_similar.ipynb](word2vec%20&%20most_similar%20lists.ipynb)
- ☀ результат - там же
+ ☀ код - [word2vec&most_similar.ipynb](word2vec%20&%20most_similar%20lists.ipynb)<br />
+ ☀ конечный вид - json с словарем формата `{'слово':количество раз, которое оно встретилось в списке схожих с seed'ом слов}` (!напиши зачем)<br />
+ ☀ результат - там же (!вставь отдельно документ)
 <br />
 <br />
 **5)** Используем ту же функцию и ту же модель, чтобы составить список слов близких к еде, сервису, интерьеру
 <br /> ☀ код - 
-[word2vec&most_similar.ipynb](word2vec%20&%20most_similar%20lists.ipynb)
+[word2vec&most_similar.ipynb](word2vec%20&%20most_similar%20lists.ipynb)<br />
  ☀ результат - там же
 <br />
 <br />
 **6)** Чистим руками списки из п. 4 и п. 5
 <br />
-**(6.1)** Список слов по категориям  -  ☀ [здесь](word2vec%20&%20most_similar%20lists.ipynb)
-лежит код, который выдавал мне каждое слово, а я писала 1 если оно подходит, ничего - если его не надо исключить из списка.  ☀ Конечный вид - json со словарем вида `{'food':[word1, ...,wordn], 'service':[word1, ...,wordn], 'interior':[word1, ...,wordn]}` ☀ Результат -
+**(6.1)** Список слов по категориям  -  <br />☀ [здесь](word2vec%20&%20most_similar%20lists.ipynb)
+лежит код, который выдавал мне каждое слово, а я писала 1 если оно подходит, ничего - если его не надо исключить из списка.<br />  
+☀ Конечный вид - json со словарем вида `{'food':[word1, ...,wordn], 'service':[word1, ...,wordn], 'interior':[word1, ...,wordn]}`<br />
+☀ Результат - 
 [param.json](param.json)
 
 
-**(6.2)** Расширенный список seed ☀ результат - 
+**(6.2)** Расширенный список seed ☀<br /> 
+результат - 
 [seed_extended.txt](seed_extended.txt)  
-
+(!дописать про два подхода - словарь и без - и ссылку на папку)
 <br /> **7)** Составляем список самых частотных и специфичных триграмм - как оказалось, этого достаточно, чтоб получить список оценочных коллокаций
 
 ☀ код - 
