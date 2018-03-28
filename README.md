@@ -46,7 +46,7 @@
 <br />
 **(6.2)** Расширенный список seed<br /> 
 ☀ результат - [seed_extended.txt](seed_extended.txt)<br />  
-Из них [236 слов из словаря rusentilex](/seed%20extended/indict.txt), [116 отобрано вручную](/seed%20extended/notdict.txt), в итоге, за вычетом повтороений с изначальным seed, мы добавили 338 слов<br />
+Из них [236](/seed%20extended/indict.txt) слов из словаря rusentilex, [116](/seed%20extended/notdict.txt) отобрано вручную, в итоге, за вычетом повтороений с изначальным seed, мы добавили 338 слов<br />
 <br /> 
 **7)** Составляем список самых частотных и специфичных триграмм - как оказалось, этого достаточно, чтоб получить список оценочных коллокаций <br />
 ☀ код - [corpus_cleaning+collocations.ipynb](corpus%20cleaning%20+%20collocations.ipynb)<br /> 
